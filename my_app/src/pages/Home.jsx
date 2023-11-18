@@ -1,0 +1,31 @@
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import pics from './pics/home.png';
+
+const Home = () => {
+  const navigate = useNavigate();
+
+  const handleJoinUsClick = () => {
+    // Replace '/signin' with the path of the page you want to navigate to
+    navigate('/signin');
+  };
+
+  return (
+    <div className='row'>
+      <div className='column1'>
+        <h1>Welcome to ProjectSpire!</h1>
+        <p>
+          Here's your inspiration to code, innovate, and bring your projects to life. Let's begin the journey together!
+        </p>
+        
+      </div>
+      <div className='column2'>
+        <img src={pics} alt='/' width="600px" />
+      </div>
+      <button onClick={handleJoinUsClick}>Join Us!</button>
+    </div>
+  
+  );
+};
+
+export default Home;
