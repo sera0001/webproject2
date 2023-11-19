@@ -1,3 +1,6 @@
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
+
+
 *{
   margin:100;
   padding:0;
@@ -125,4 +128,127 @@ main{
     background-position: 0% 50%;
   }
   
+}
+
+
+section {
+  width: 100%;
+  max-width: 420px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1rem;
+  background-color: #dedcdc;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-grow: 1;
+  padding-bottom: 1rem;
+}
+
+a,
+a:visited {
+  color: #c5bac4;
+}
+
+input[type='text'],
+input[type='password'],
+button,
+textarea {
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  padding: 0.30rem;
+  border-radius: 1rem;
+  width:500px;
+  margin: auto;
+  background-color: transparent;
+  border: 2px solid #c5bac4;
+}
+
+label,
+button {
+  margin: auto;
+  margin-top: 35px;
+  color:#dedcdc;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-family: 'Courier New', Courier, monospace;
+}
+button {
+ 
+  width: 200px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #c5bac4;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 20px;
+}
+button:hover {
+background-color: #29383e;
+}
+
+.instructions {
+  font-size: 0.75rem;
+  border-radius: 0.5rem;
+  background: #989daa;
+  color: #fff;
+  padding: 0.25rem;
+  position: relative;
+  bottom: -10px;
+  margin: auto;
+}
+
+.instructions>svg {
+  margin-right: 0.25rem;
+}
+
+.offscreen {
+  position: absolute;
+  left: -9999px;
+}
+
+.hide {
+  display: none;
+}
+
+.valid {
+  color: limegreen;
+  margin-left: 0.25rem;
+}
+
+.invalid {
+  color: red;
+  margin-left: 0.25rem;
+}
+
+.errmsg {
+  background-color: lightpink;
+  color: firebrick;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.line {
+  display: inline-block;
+}
+.title {
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Courier New', Courier, monospace;
+}
+.reg{
+  margin: auto;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
 }

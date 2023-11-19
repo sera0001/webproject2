@@ -37,8 +37,8 @@ const Sidebar = ({children}) => {
             icon:<FaRocketchat/>
         },
         {
-            path:"Signin",
-            name:"Signin",
+            path:"Signup",
+            name:"Sign up",
             icon:<CgLogIn/>
         },
     ]

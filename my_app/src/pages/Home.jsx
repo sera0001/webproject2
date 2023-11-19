@@ -6,8 +6,8 @@ const Home = () => {
   const navigate = useNavigate();
 
   const handleJoinUsClick = () => {
-    // Replace '/signin' with the path of the page you want to navigate to
-    navigate('/signin');
+    // Replace '/signup' with the path of the page you want to navigate to
+    navigate('/signup');
   };
 
   return (
