@@ -4,13 +4,18 @@ import {Link} from 'react-router-dom'
 import apiRequest from '../apiRequest';
 const user_regex= /^[a-zA-Z][a-zA-Z0-9-_]{3,23}$/;
 const pwd_regex= /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Simple email regex, you might want to improve it based on your requirements
+
 const API_URL="http://localhost:3000/users"
 
 
 export default function SIgnup() {
 
     const userRef = useRef();
+    const [email,setEmail]=useState('');
     const [user,setUser]= useState('');
+    const [validEmail, setValidEmail] = useState(false);
+    const [eFocus, setEFocus] = useState(false);
     const [validName, setvalidName]= useState(false); //is the name correct
     const [nFocus, setnFocus]= useState(false); //focus on the input field
 
@@ -22,14 +27,19 @@ export default function SIgnup() {
     const [vmPass, setvmPass]= useState(false); 
     const [mpfocus, setmpFocus]= useState(false); 
     
-    const [errMsg, setErr]= useState('');
+    const [errMsg, setErrMsg]= useState('');
     const [success, setSuccess]= useState(false);
 
-  
 
+   
     useEffect(()=>{
         setvalidName(user_regex.test(user))
     },[user])
+
+    useEffect(() => {
+        setValidEmail(emailRegex.test(email));
+      }, [email]);
+    
 
     useEffect(()=>{
         console.log(pwd)
@@ -53,14 +63,25 @@ export default function SIgnup() {
                 'Content-type':'application/json'
             },
             body: JSON.stringify({'id':user,'password':pwd})
-        }
-        const result= await apiRequest(API_URL, postOption);
-        if(result) setErr('Must use unique username');
-        else setSuccess(true);
-        setUser('')
-        setPwd('')
-        setmPwd('')
-    }
+        };
+        try {
+            const result = await apiRequest(API_URL, postOption);
+            if (result) {
+              setErrMsg('Must use a unique username');
+            } else {
+              setSuccess(true);
+            }
+          } catch (error) {
+            console.error('Error during registration:', error);
+            setErrMsg('An error occurred during registration');
+          } finally {
+            setUser('');
+            setEmail('');
+            setPwd('');
+            setmPwd('');
+          }
+        };
+
   return (
     <>   
      {success? (
@@ -90,6 +111,26 @@ export default function SIgnup() {
                4 to 24 characters <br/>
                must begin with a letter <br/>
             </p> 
+
+             <label htmlFor="email">Email: </label>
+            <input
+              type='email'
+              id='email'
+              required
+              value={email}
+              autoComplete='off'
+              onChange={(e) => setEmail(e.target.value)}
+              aria-invalid={validEmail ? 'false' : 'true'}
+              aria-describedby='emailnote'
+              onFocus={() => setEFocus(true)}
+              onBlur={() => setEFocus(false)}
+            />
+            <p
+              id='emailnote'
+              className={eFocus && email && !validEmail ? 'instructions' : 'offscreen'}
+            >
+              Enter a valid email address <br />
+            </p>
 
             <label htmlFor="password"> Password: </label>
             <input
