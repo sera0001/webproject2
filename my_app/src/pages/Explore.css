@@ -1,0 +1,62 @@
+/* Explore.css */
+
+.explore-container {
+  padding: 20px;
+  position: relative;
+}
+
+.explore-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.explore-item {
+  background-color: #c5bac4;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.explore-item a {
+  text-decoration: none;
+  color: #000;
+}
+
+.explore-item:hover {
+  background: #a89aaf;
+}
+
+/* Search Section Styles */
+.search-section {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.search-label {
+  font-size: 10px; /* Adjust the font size for the search label */
+  margin-right: 5px;
+}
+
+.search-input {
+  padding: 3px; /* Adjust the padding for the search input */
+  font-size: 10px; /* Adjust the font size for the search input */
+  border: 1px solid #c5bac4;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+
+.search-button {
+  padding: 3px 10px; /* Adjust the padding for the search button */
+  font-size: 16px; /* Adjust the font size for the search button */
+  border: 1px solid #c5bac4;
+  border-radius: 3px;
+  cursor: pointer;
+}

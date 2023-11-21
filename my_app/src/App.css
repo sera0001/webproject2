@@ -104,10 +104,37 @@ main{
  border-style: none;
 
 }
+.row .column1 {
+  width: 60%;
+  padding-right: 50px;
+  position: relative;
+}
+
+.column1 img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  border-radius: 20px;
+  z-index: -1;
+}
+
+.column1 button {
+  font-size: 30px;
+  padding: 15px;
+  width: 100%;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #c5bac4;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+}
 
 @media screen  and (max-width:980px){
   .column2 img{
-    width: 350px;
+    width: 300px;
   }
   .column1 h1{
     font-size: 40px;
