@@ -1,6 +1,6 @@
 // Import necessary modules and components
 import React, { useState } from 'react';
-import { FaHome, FaRegQuestionCircle, FaSearch, FaBars, FaRocketchat } from 'react-icons/fa';
+import { FaHome,FaEdit,FaRegQuestionCircle, FaSearch, FaBars, FaRocketchat } from 'react-icons/fa';
 import { CgLogIn } from 'react-icons/cg';
 import { NavLink } from 'react-router-dom';
 
@@ -31,6 +31,11 @@ const Sidebar = ({ children }) => {
       path: '/Contact',
       name: 'Contact',
       icon: <FaRocketchat />,
+    },
+    {
+      path: '/EditProfile',
+      name: 'Edit Profile',
+      icon: <FaEdit />,
     },
     {
       path: '/Signup',

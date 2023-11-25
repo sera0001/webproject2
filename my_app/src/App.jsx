@@ -12,6 +12,7 @@ import ItemDetail from './pages/ItemDetail';
 import SubjectDetail from './pages/SubjectDetail'; // Add the SubjectDetail component
 import AI from './pages/AI/AI.jsx';
 import DBMS from './pages/DBMS/DBMS.jsx';
+import EditProfile from './pages/EditProfile.jsx';
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
           <Route path="/explore" element={<Explore />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/Editprofile" element={<EditProfile/>} />
           <Route path="/item/:itemId" element={<ItemDetail />} /> {/* Dynamic route for item detail */}
           <Route path="/item/:itemId/subject/:subjectId" element={<SubjectDetail />} /> {/* Dynamic route for subject detail */}
           <Route path="/ai" element={<AI />} />
