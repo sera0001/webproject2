@@ -133,8 +133,9 @@ main{
 }
 
 @media screen  and (max-width:980px){
-  .column2 img{
-    width: 300px;
+  .column2 img {
+    width: 200px; /* Adjust the size as needed */
+    border: 1px solid #fff; /* Add a white border to simulate wireframe */
   }
   .column1 h1{
     font-size: 40px;

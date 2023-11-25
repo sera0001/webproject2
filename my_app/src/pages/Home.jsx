@@ -1,13 +1,11 @@
-// Home.jsx
+/// Home.jsx
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import pics from './pics/home.png';
-
 const Home = () => {
   const navigate = useNavigate();
 
   const handleJoinUsClick = () => {
-    // Replace '/signup' with the path of the page you want to navigate to
     navigate('/signup');
   };
 
