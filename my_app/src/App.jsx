@@ -7,7 +7,7 @@ import Home from './pages/Home';
 import Explore from './pages/Explore';
 import Contact from './pages/Contact';
 import Signup from './pages/Signup';
-import Login from './pages/Login';
+import Login from './pages/login';
 import ItemDetail from './pages/ItemDetail';
 import SubjectDetail from './pages/SubjectDetail'; // Add the SubjectDetail component
 import AI from './pages/AI/AI.jsx';

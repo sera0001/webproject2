@@ -132,9 +132,10 @@ main{
   margin-top: 20px;
 }
 
-@media screen  and (max-width:980px){
+@media screen /* and (max-width:980px)*/{
   .column2 img {
-    width: 200px; /* Adjust the size as needed */
+    width: 500px; /* Adjust the size as needed */
+    height: 500px;
     border: 1px solid #fff; /* Add a white border to simulate wireframe */
   }
   .column1 h1{
@@ -188,27 +189,29 @@ input[type='password'],input[type='email'],
 button,
 textarea {
   font-family: 'Nunito', sans-serif;
-  font-size: 22px;
-  padding: 0.30rem;
+  font-size: 20px;
   border-radius: 1rem;
-  width:500px;
   margin: auto;
   background-color: transparent;
   border: 2px solid #c5bac4;
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
 }
 
 label,
 button {
   margin: auto;
-  margin-top: 35px;
+  margin-top: 3px;
   color:#dedcdc;
-  font-family:Arial, Helvetica, sans-serif;
   font-size: 25px;
   font-family: 'Courier New', Courier, monospace;
+
 }
 button {
  
-  width: 200px;
+    width: 200px;
     padding: 15px;
     text-align: center;
     border-radius: 25px;
@@ -279,4 +282,20 @@ background-color: #29383e;
   font-size: 20px;
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
+}
+
+.social-media a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  margin-bottom: 10px;
+}
+.social-media p{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+}
+.social-media a svg {
+  margin-right: 5px;
 }

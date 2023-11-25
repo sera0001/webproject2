@@ -6,7 +6,7 @@ const user_regex= /^[a-zA-Z][a-zA-Z0-9-_]{3,23}$/;
 const pwd_regex= /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Simple email regex, you might want to improve it based on your requirements
 
-const API_URL="http://localhost:3000/users"
+const API_URL="http://localhost:3001/users"
 
 
 export default function SIgnup() {
