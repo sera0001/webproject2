@@ -31,9 +31,6 @@ export default function SIgnup() {
     const [errMsg, setErrMsg]= useState('');
     const [success, setSuccess]= useState(false);
 
-    useEffect(() => {
-      userRef.current.focus();
-    }, []);
    
     useEffect(()=>{
         setvalidName(user_regex.test(user))
