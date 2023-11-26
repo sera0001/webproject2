@@ -11,6 +11,7 @@ const API_URL="http://localhost:3001/users"
 
 export default function SIgnup() {
 
+
     const userRef = useRef();
     const [email,setEmail]=useState('');
     const [user,setUser]= useState('');
@@ -30,7 +31,9 @@ export default function SIgnup() {
     const [errMsg, setErrMsg]= useState('');
     const [success, setSuccess]= useState(false);
 
-
+    useEffect(() => {
+      userRef.current.focus();
+    }, []);
    
     useEffect(()=>{
         setvalidName(user_regex.test(user))

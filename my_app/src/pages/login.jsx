@@ -1,11 +1,11 @@
-import {  useState, useEffect, useContext } from 'react';
+import {  useState, useEffect} from 'react';
 import {Link, useNavigate, useLocation} from 'react-router-dom'
 import '../App.css'
 import useAuth from '../hooks/useAuth';
 
 
 const Login = () => {
-    const API_URL="http://localhost:3000/users"
+    const API_URL="http://localhost:3001/users"
     const { setAuth } = useAuth();
     const navigate = useNavigate();
     const location = useLocation();
@@ -21,6 +21,9 @@ const Login = () => {
     },[user,pwd])
     const handleSubmit = async (e) => {
         e.preventDefault();
+      
+
+
         try {
             //setup json-server with db.json dataset for testing
             //call API: security concerns to be discussed later in the course
@@ -49,10 +52,10 @@ const Login = () => {
                 setErrMsg('Missing Username or Password');
             } else if (err.response?.status === 401) {
                 setErrMsg('Unauthorized');
-            } else {
+            } else  {
                 setErrMsg('Login Failed');
-            }
-        }
+            } 
+        };
     }
 
     return (
@@ -62,7 +65,7 @@ const Login = () => {
                     <h1>You are logged in!</h1>
                     <br />
                     <p>
-                    <Link to='/'> Go Home</Link>
+                    <Link to='/Home'> Go Home</Link>
                     </p>
                 </section>
             ) : (
