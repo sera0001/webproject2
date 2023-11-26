@@ -1,7 +1,7 @@
 const CN = () => {
     return (
       <div>
-        <h2>Database Management Systems Page</h2>
+        <h2>computer network Page</h2>
         {/* Add content for the DBMS page */}
       </div>
     );

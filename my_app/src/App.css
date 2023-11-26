@@ -132,11 +132,11 @@ main{
   margin-top: 20px;
 }
 
-@media screen /* and (max-width:980px)*/{
+@media screen {
   .column2 img {
-    width: 500px; /* Adjust the size as needed */
+    width: 500px; 
     height: 500px;
-    border: 1px solid #fff; /* Add a white border to simulate wireframe */
+    border: 1px solid #fff;
   }
   .column1 h1{
     font-size: 40px;
