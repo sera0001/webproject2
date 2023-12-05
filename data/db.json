@@ -1,0 +1,42 @@
+{
+    "items": [
+      {
+        "itemId": 1,
+        "itemName": "Database Management Systems",
+        "itemDescription": "Description for DBMS",
+        "itemDetails": "Details for DBMS"
+      },
+      {
+        "itemId": 2,
+        "itemName": "Artificial Intelligence",
+        "itemDescription": "Description for AI",
+        "itemDetails": "Details for AI"
+      },
+      {
+        "itemId": 3,
+        "itemName": "Computer Networks",
+        "itemDescription": "Description for Computer Networks",
+        "itemDetails": "Details for Computer Networks"
+      },
+      {
+        "itemId": 4,
+        "itemName": "Web Development",
+        "itemDescription": "Description for Web Development",
+        "itemDetails": "Details for Web Development"
+      }
+    ],
+    "users": [
+      {
+        "userId": 1,
+        "username": "sarah",
+        "email": "sarah@gmail.com",
+        "password": 123456
+      },
+      {
+        "userId": 2,
+        "username": "rayan",
+        "email": "rayan@gmail.com",
+        "password": 123456
+      }
+    ]
+}
