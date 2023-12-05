@@ -303,3 +303,8 @@ background-color: #29383e;
 .social-media a svg {
   margin-right: 5px;
 }
+.pro{
+  font-size: 50px;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
