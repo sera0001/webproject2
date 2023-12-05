@@ -2,7 +2,6 @@
 
 
 *{
-  margin:100;
   padding:0;
   text-decoration: none;
  
@@ -14,7 +13,7 @@
 main{
   width: 100%;
   padding: 20px;
-  background:linear-gradient( -45deg,#191d23, #29383e );
+  background:linear-gradient( -45deg,#c5bac4, #577075 );
   color:white;
   animation: animate  12s  ease-in-out infinite;
 }
@@ -51,12 +50,11 @@ main{
   transition: all 0.5s;
 }
 .link:hover{
-  background:#989daa;
   color: #000;
   transition: all 0.5s;
 }
 .active{
-  background:#dedcdc;
+  background:gray;
   color: #000;
 }
 .icon, .link_text{
@@ -75,7 +73,7 @@ main{
   background: #989daa;
   align-items: center;
   padding: 0.75em 3em;
-  border: 0.1em solid  #c5bac5;
+  border: 0.1em solid  #c5bac4;
   border-radius: 100vw;
   cursor: pointer;
   transition: background-color 25ms;
@@ -90,13 +88,17 @@ main{
     padding-right: 50px;
 }
 .column1 h1{
-  font-size: 40px;
+  height: 100px;
   margin-bottom: 10px;
+  color:#191d23;
+  font-family: 'Courier New', Courier, monospace;
 }
 .column1 p{
-  font-size: 25px;
-  margin-bottom: 50x;
+  margin-bottom: 50px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:#29383e;
 }
+
 .column1{
  width: 150px;
  padding: 12px 20px;
@@ -127,7 +129,7 @@ main{
   font-weight: bold;
   border: 2px solid #c5bac4;
   background: transparent;
-  color: #fff;
+  color: #191d23;
   cursor: pointer;
   margin-top: 20px;
 }
@@ -136,15 +138,16 @@ main{
   .column2 img {
     width: 500px; 
     height: 500px;
-    border: 1px solid #fff;
+   
   }
   .column1 h1{
     font-size: 40px;
   }
   .column1 p{
-    font-size: 17px;
+    font-size: 30px;
   }
 }
+
 @keyframes animate {
   0%{
     background-position: 0% 50%;
@@ -193,7 +196,7 @@ textarea {
   border-radius: 1rem;
   margin: auto;
   background-color: transparent;
-  border: 2px solid #c5bac4;
+  border: 2px solid white;
   width: 100%;
   padding: 10px;
   margin: 8px 0;
@@ -203,8 +206,8 @@ textarea {
 label,
 button {
   margin: auto;
-  margin-top: 3px;
-  color:#dedcdc;
+  margin-top: 2px;
+  color:white;
   font-size: 25px;
   font-family: 'Courier New', Courier, monospace;
 
@@ -218,7 +221,7 @@ button {
     font-weight: bold;
     border: 2px solid #c5bac4;
     background: transparent;
-    color: #fff;
+    color: white;
     cursor: pointer;
     margin: auto;
     margin-top: 20px;
@@ -274,6 +277,7 @@ background-color: #29383e;
 }
 .title {
   text-align: center;
+  margin: 15px;
   font-size: 50px;
   font-family: 'Courier New', Courier, monospace;
 }

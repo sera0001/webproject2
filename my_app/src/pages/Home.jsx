@@ -16,6 +16,7 @@ const Home = () => {
         <p>
           Here's your inspiration to code, innovate, and bring your projects to life. Let's begin the journey together!
         </p>
+      
         <button onClick={handleJoinUsClick}>Join Us!</button>
       </div>
       <div className='column2'>

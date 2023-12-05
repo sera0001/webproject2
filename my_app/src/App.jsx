@@ -1,6 +1,6 @@
 // App.jsx
 import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes} from 'react-router-dom';
 import Sidebar from './components/Sidebar';
 import About from './pages/About';
 import Home from './pages/Home';
@@ -18,6 +18,7 @@ import RecipeDatabase from './pages/DBMS/RecipeDatabase';
 import StudentInformationSystem from './pages/DBMS/StudentInformationSystem';
 import EmployeeDirectory from './pages/DBMS/EmployeeDirectory';
 import InventoryManagementSystem from './pages/DBMS/InventoryManagementSystem';
+
 
 const App = () => {
   return (
@@ -43,6 +44,12 @@ const App = () => {
         <Route path="/dbms/student-information-system" element={<StudentInformationSystem />} />
         <Route path="/dbms/employee-directory" element={<EmployeeDirectory />} />
         <Route path="/dbms/inventory-management-system" element={<InventoryManagementSystem />} />
+       
+
+
+
+
+
         </Routes>
       </Sidebar>
     </BrowserRouter>

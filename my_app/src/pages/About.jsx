@@ -1,9 +1,11 @@
 import React from 'react';
 import './About.css'; // Make sure to import the CSS file
+import img1 from './pics/img1.png';
 
 const About = () => {
   return (
     <div className="about-container">
+      <div className='about-text'>
       <h1>About Us</h1>
       <p>
         Welcome to our project! We are computer science students at Kuwait University, passionate about technology and innovation.
@@ -17,6 +19,10 @@ const About = () => {
       <p>
         Happy coding!
       </p>
+      </div>
+      <div className="about-image">
+      <img src={img1} alt="About Us" />
+  </div>
     </div>
   );
 };

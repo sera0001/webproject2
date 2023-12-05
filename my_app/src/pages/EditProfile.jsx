@@ -51,7 +51,7 @@ const EditProfile = () => {
 
   return (
     <div className='Editprofile'>
-      <h1>Edit Profile</h1>
+      <h1>User Profile</h1>
       <form onSubmit={handleSubmit}>
         <div className="profile-photo-container">
           <ProfileIcon image={user.profileImage} alt={user.name} size={80} />
