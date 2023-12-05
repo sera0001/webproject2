@@ -34,14 +34,14 @@ const Explore = () => {
 
   return (
     <div className="explore-container">
-      {/* Breadcrumb Navigation */}
+    
       <div className="breadcrumb">
         <Link to="/">Home</Link> / Explore
       </div>
 
       <h1>Explore Page</h1>
 
-      {/* Search Section */}
+   
       <div className="search-section">
         <label className="search-label" htmlFor="search">
           Search:
@@ -58,7 +58,7 @@ const Explore = () => {
         </button>
       </div>
 
-      {/* Display filtered items with links to their detailed pages */}
+     
       <ul className="explore-items">
         {filteredItems.map((item) => (
           <li key={item.id} className="explore-item">

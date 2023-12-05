@@ -2,7 +2,7 @@ const Cybersecurity = () => {
     return (
       <div>
 
-        <h2>Database Management Systems Page</h2>
+        <h2>Cybersecurity Page</h2>
         <p>welcomeeeeeeeeeee</p>
         {/* Add content for the DBMS page */}
       </div>
