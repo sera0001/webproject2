@@ -2,9 +2,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Explore.css';
-import AI from './AI/AI.jsx'; // Import the AI component
-import DBMS from './DBMS/DBMS.jsx'; // Import the DBMS component
-import EventManagementSystem from './DBMS/EventManagementSystem.jsx'; // Import the EventManagementSystem component
+
+
 
 const Explore = () => {
   const [searchTerm, setSearchTerm] = useState('');
