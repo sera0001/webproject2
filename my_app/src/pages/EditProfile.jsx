@@ -103,7 +103,9 @@ const EditProfile = () => {
 
 export default EditProfile;
 */
-import React, { useState } from 'react';
+import React from 'react';
+import  { useState } from 'react';
+import { Link } from 'react-router-dom';
 import ProfileIcon from '../components/ProfileIcon';
 import './Editprofile.css';
 
@@ -207,7 +209,11 @@ const EditProfile = () => {
     <div className='pro'>
       <p>Please sign up to access your profile.</p>
       {/* Render your sign-up form or link to the sign-up page */}
+      <Link to="/signup">
+            <button>Sign Up</button>
+          </Link>
     </div>
+
   );
 };
 
