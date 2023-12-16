@@ -54,9 +54,6 @@ export default function SIgnup() {
     const handleRegister = async (e) =>
     {
         e.preventDefault();
-        //check with server if the entries are valid
-        //check with server if user does not exist
-        //check with server if information are saved
         const postOption = {
             method:'POST',
             headers: {
